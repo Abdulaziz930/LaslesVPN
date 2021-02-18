@@ -1,0 +1,47 @@
+footer {
+  background-color: $fourth-bg-color;
+  padding: 180px 150px 100px;
+}
+
+.footer-content {
+  margin-top: 60px;
+}
+
+.contentBox {
+  margin-top: 20px;
+  p {
+    @include text(16px, 400, 30px, $paragraph-color);
+    span {
+      font-weight: 600;
+    }
+  }
+}
+.f-social-icon {
+  margin-top: 20px;
+  display: flex;
+  .icon-link {
+    padding-right: 20px;
+  }
+}
+.copyright {
+  margin-top: 30px;
+  @include text(16px, 400, 30px, $paragraph-color);
+  span {
+    font-weight: 600;
+  }
+}
+
+.listBox {
+  ul {
+    list-style-type: none;
+    p {
+      @include text(20px, 500, 30px, $heading-color);
+    }
+    a {
+      @include text(16px, 400, 30px, $paragraph-color);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

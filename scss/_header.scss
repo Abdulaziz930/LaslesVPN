@@ -1,0 +1,25 @@
+nav {
+  margin-top: 40px;
+  .collapse {
+    margin: 0 55px;
+  }
+  .nav-item:not(:last-child) {
+    padding-right: 40px;
+  }
+  .nav-link {
+    @include text(16px, 400, 19px, $paragraph-color);
+  }
+  .btn:first-child {
+    @include text(16px, 500, 19px, $heading-color);
+  }
+  .btn:last-child {
+    @include btn(10px 45px, transparent, $primary-color, 50px);
+    margin-left: 10px;
+    transition: all 0.5s;
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    }
+  }
+}

@@ -1,0 +1,382 @@
+#intro {
+  margin-top: 100px;
+  h1 {
+    @include text(50px, 500, 70px, $heading-color);
+    span {
+      font-weight: 700;
+    }
+  }
+  p {
+    margin-top: 20px;
+    @include text(16px, 400, 30px, $paragraph-color);
+    span {
+      font-weight: 600;
+    }
+  }
+  .btnBox {
+    margin-top: 50px;
+    a {
+      @include btn(17px 70px, $primary-color, none, 10px);
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.bannerBox {
+  margin-top: 100px;
+  padding: 30px 0;
+  border-radius: 10px;
+  .users {
+    @include flexy-box();
+    border-right: 2px solid $border-color;
+    padding-top: 30px;
+  }
+  .locations {
+    @include flexy-box();
+    border-right: 2px solid $border-color;
+    padding-top: 30px;
+  }
+  .servers {
+    @include flexy-box();
+    padding-top: 30px;
+  }
+  .content-1 {
+    @include icon-box(140%, 175%, url("../assets/icons/user.svg"));
+  }
+  .content-2 {
+    @include icon-box(120%, 143%, url("../assets/icons/location.svg"));
+  }
+  .content-3 {
+    @include icon-box(130%, 153%, url("../assets/icons/server.svg"));
+  }
+}
+
+.featureBox {
+  margin-top: 95px;
+  margin-bottom: 125px;
+  .imgBox {
+    padding-right: 170px;
+    img {
+      width: 100%;
+    }
+  }
+  .contentBox {
+    padding-top: 30px;
+    .main-content {
+      h3 {
+        @include text(35px, 500, 50px, $heading-color);
+      }
+      p {
+        @include text(16px, 400, 30px, $paragraph-color);
+      }
+    }
+    .second-content {
+      padding-left: 30px;
+      p {
+        @include text(14px, 400, 30px, $paragraph-color);
+        position: relative;
+        &::before {
+          content: url("../assets/icons/check.svg");
+          position: absolute;
+          right: 102%;
+          top: 10%;
+        }
+      }
+    }
+  }
+}
+
+#plans {
+  background-color: $second-bg-color;
+  padding-bottom: 150px;
+  .planBox {
+    padding-top: 80px;
+    .main-plan-heading {
+      text-align: center;
+      margin-bottom: 60px;
+      h3 {
+        @include text(35px, 500, 50px, $heading-color);
+      }
+      p {
+        @include text(16px, 400, 30px, $paragraph-color);
+      }
+    }
+    .plan {
+      border: 3px solid $second-border-color;
+      border-radius: 10px;
+      background-color: $bg-color;
+      @include flexy-box();
+      flex-direction: column;
+      transition: all 0.5s;
+      &:hover {
+        border-color: $primary-color;
+      }
+      .second-plan-heading {
+        h5 {
+          @include text(18px, 500, 30px, $heading-color);
+        }
+      }
+      .plan-content {
+        margin-top: 30px;
+        padding-left: 30px;
+        p {
+          @include text(14px, 400, 30px, $paragraph-color);
+          position: relative;
+          &::before {
+            content: url("../assets/icons/check-2.svg");
+            position: absolute;
+            right: 115%;
+            top: 5%;
+          }
+        }
+      }
+      .plan-footer {
+        h4 {
+          text-align: center;
+          @include text(25px, 500, 30px, $heading-color);
+          span {
+            @include text(25px, 400, 30px, $paragraph-color);
+          }
+        }
+        .btn {
+          @include btn(10px 60px, transparent, $primary-color, 50px);
+          margin-top: 20px;
+          transition: all 0.5s;
+          &:hover {
+            background-color: $primary-color;
+            color: #fff;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+          }
+        }
+      }
+    }
+    .plan-1 {
+      .second-plan-heading {
+        margin-top: 30px;
+      }
+      padding: 80px 0 50px;
+      .plan-footer {
+        margin-top: 130px;
+      }
+    }
+    .plan-2 {
+      .iconBox {
+        margin-top: 25px;
+      }
+      .second-plan-heading {
+        margin-top: 30px;
+      }
+      padding: 60px 0 50px;
+      .plan-footer {
+        margin-top: 80px;
+      }
+    }
+    .plan-3 {
+      .iconBox {
+        margin-top: 40px;
+      }
+      .second-plan-heading {
+        margin-top: 30px;
+      }
+      padding: 50px 0 45px;
+      .plan-footer {
+        margin-top: 35px;
+      }
+    }
+  }
+}
+
+#global-network {
+  background-color: $thirth-bg-color;
+  padding-top: 50px;
+  .g-network-heading {
+    text-align: center;
+    margin-bottom: 155px;
+    h3 {
+      @include text(35px, 500, 50px, $heading-color);
+    }
+    p {
+      @include text(16px, 400, 30px, $paragraph-color);
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .g-network-img {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.socialMediaBox {
+  margin-top: 110px;
+  @include flexy-box();
+  .social-icon-box {
+    height: 100%;
+    @include flexy-box();
+  }
+  .netflix {
+    a {
+      position: relative;
+      opacity: 1;
+
+      &::before {
+        content: url("../assets/icons/netflix-1.svg");
+        position: absolute;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .reddit {
+    a {
+      position: relative;
+      opacity: 1;
+
+      &::before {
+        content: url("../assets/icons/reddit-1.svg");
+        position: absolute;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .amazon {
+    margin-left: -25px;
+    a {
+      position: relative;
+      opacity: 1;
+
+      &::before {
+        content: url("../assets/icons/amazon-1.svg");
+        position: absolute;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .discord {
+    a {
+      position: relative;
+      opacity: 1;
+
+      &::before {
+        content: url("../assets/icons/discord-1.svg");
+        position: absolute;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.commentBox {
+  margin-top: 120px;
+  .comment-heading {
+    text-align: center;
+    h3 {
+      @include text(35px, 500, 50px, $heading-color);
+    }
+    p {
+      @include text(16px, 400, 30px, $paragraph-color);
+    }
+  }
+  .comment-content {
+    margin-top: 60px;
+    .my-card {
+      border: 2px solid $second-border-color;
+      border-radius: 10px;
+      padding: 30px;
+      height: 255px;
+      transition: all 0.5s;
+      &:hover {
+        border-color: $primary-color;
+      }
+      .first-card-section {
+        display: flex;
+        .user {
+          padding-left: 20px;
+          h5 {
+            @include text(18px, 500, 20px, $heading-color);
+            span {
+              @include text(14px, 400, 20px, $paragraph-color);
+            }
+          }
+        }
+        .raiting {
+          padding-left: 50px;
+          span {
+            position: relative;
+            @include text(16px, 400, 30px, $heading-color);
+            &::before {
+              content: url("../assets/icons/star.svg");
+              position: absolute;
+              top: -20%;
+              left: 140%;
+            }
+          }
+        }
+      }
+      .content {
+        margin-top: 15px;
+        p {
+          @include text(16px, 400, 25px, $heading-color);
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.subscribeBox {
+  background-color: $bg-color;
+  margin-top: 185px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  border-radius: 10px;
+  padding: 60px 70px;
+  position: relative;
+  top: 120px;
+  .contentBox {
+    h3 {
+      @include text(35px, 500, 45px, $heading-color);
+    }
+    p {
+      @include text(16px, 400, 30px, $paragraph-color);
+      margin-bottom: 0;
+    }
+  }
+  .button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .buttonBox {
+      a {
+        @include btn(15px 65px, $primary-color, none, 10px);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+      }
+    }
+  }
+}

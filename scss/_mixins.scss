@@ -1,0 +1,48 @@
+@mixin text($f-size, $f-weight, $line-height, $color) {
+  font-size: $f-size;
+  font-weight: $f-weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin btn($padding, $bg-color, $border, $radius) {
+  padding: $padding;
+  background-color: $bg-color;
+  @if ($bg-color == transparent) {
+    color: $primary-color;
+  } @else if($bg-color == $primary-color) {
+    color: #fff;
+  }
+  @if ($border == none) {
+    border: none;
+  } @else {
+    border: 1px solid $border;
+  }
+  border-radius: $radius;
+}
+
+@mixin flexy-box() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin icon-box($right-before, $right-after, $url) {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $second-color;
+    top: 3%;
+    right: $right-before;
+  }
+  &::after {
+    content: $url;
+    position: absolute;
+    right: $right-after;
+    bottom: 40%;
+  }
+}

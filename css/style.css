@@ -1,0 +1,793 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+nav {
+  margin-top: 40px;
+}
+
+nav .collapse {
+  margin: 0 55px;
+}
+
+nav .nav-item:not(:last-child) {
+  padding-right: 40px;
+}
+
+nav .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #4f5665;
+}
+
+nav .btn:first-child {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #0b132a;
+}
+
+nav .btn:last-child {
+  padding: 10px 45px;
+  background-color: transparent;
+  color: #7f67ce;
+  border: 1px solid #7f67ce;
+  border-radius: 50px;
+  margin-left: 10px;
+  transition: all 0.5s;
+}
+
+nav .btn:last-child:hover {
+  background-color: #7f67ce;
+  color: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+#intro {
+  margin-top: 100px;
+}
+
+#intro h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 70px;
+  color: #0b132a;
+}
+
+#intro h1 span {
+  font-weight: 700;
+}
+
+#intro p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+#intro p span {
+  font-weight: 600;
+}
+
+#intro .btnBox {
+  margin-top: 50px;
+}
+
+#intro .btnBox a {
+  padding: 17px 70px;
+  background-color: #7f67ce;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+#intro img {
+  width: 100%;
+}
+
+.bannerBox {
+  margin-top: 100px;
+  padding: 30px 0;
+  border-radius: 10px;
+}
+
+.bannerBox .users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #eeeff2;
+  padding-top: 30px;
+}
+
+.bannerBox .locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #eeeff2;
+  padding-top: 30px;
+}
+
+.bannerBox .servers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.bannerBox .content-1 {
+  position: relative;
+}
+
+.bannerBox .content-1::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffecec;
+  top: 3%;
+  right: 140%;
+}
+
+.bannerBox .content-1::after {
+  content: url("../assets/icons/user.svg");
+  position: absolute;
+  right: 175%;
+  bottom: 40%;
+}
+
+.bannerBox .content-2 {
+  position: relative;
+}
+
+.bannerBox .content-2::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffecec;
+  top: 3%;
+  right: 120%;
+}
+
+.bannerBox .content-2::after {
+  content: url("../assets/icons/location.svg");
+  position: absolute;
+  right: 143%;
+  bottom: 40%;
+}
+
+.bannerBox .content-3 {
+  position: relative;
+}
+
+.bannerBox .content-3::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffecec;
+  top: 3%;
+  right: 130%;
+}
+
+.bannerBox .content-3::after {
+  content: url("../assets/icons/server.svg");
+  position: absolute;
+  right: 153%;
+  bottom: 40%;
+}
+
+.featureBox {
+  margin-top: 95px;
+  margin-bottom: 125px;
+}
+
+.featureBox .imgBox {
+  padding-right: 170px;
+}
+
+.featureBox .imgBox img {
+  width: 100%;
+}
+
+.featureBox .contentBox {
+  padding-top: 30px;
+}
+
+.featureBox .contentBox .main-content h3 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #0b132a;
+}
+
+.featureBox .contentBox .main-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+.featureBox .contentBox .second-content {
+  padding-left: 30px;
+}
+
+.featureBox .contentBox .second-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+  position: relative;
+}
+
+.featureBox .contentBox .second-content p::before {
+  content: url("../assets/icons/check.svg");
+  position: absolute;
+  right: 102%;
+  top: 10%;
+}
+
+#plans {
+  background-color: #fdfdfd;
+  padding-bottom: 150px;
+}
+
+#plans .planBox {
+  padding-top: 80px;
+}
+
+#plans .planBox .main-plan-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#plans .planBox .main-plan-heading h3 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #0b132a;
+}
+
+#plans .planBox .main-plan-heading p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+#plans .planBox .plan {
+  border: 3px solid #dddddd;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+
+#plans .planBox .plan:hover {
+  border-color: #7f67ce;
+}
+
+#plans .planBox .plan .second-plan-heading h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #0b132a;
+}
+
+#plans .planBox .plan .plan-content {
+  margin-top: 30px;
+  padding-left: 30px;
+}
+
+#plans .planBox .plan .plan-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+  position: relative;
+}
+
+#plans .planBox .plan .plan-content p::before {
+  content: url("../assets/icons/check-2.svg");
+  position: absolute;
+  right: 115%;
+  top: 5%;
+}
+
+#plans .planBox .plan .plan-footer h4 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #0b132a;
+}
+
+#plans .planBox .plan .plan-footer h4 span {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+#plans .planBox .plan .plan-footer .btn {
+  padding: 10px 60px;
+  background-color: transparent;
+  color: #7f67ce;
+  border: 1px solid #7f67ce;
+  border-radius: 50px;
+  margin-top: 20px;
+  transition: all 0.5s;
+}
+
+#plans .planBox .plan .plan-footer .btn:hover {
+  background-color: #7f67ce;
+  color: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+#plans .planBox .plan-1 {
+  padding: 80px 0 50px;
+}
+
+#plans .planBox .plan-1 .second-plan-heading {
+  margin-top: 30px;
+}
+
+#plans .planBox .plan-1 .plan-footer {
+  margin-top: 130px;
+}
+
+#plans .planBox .plan-2 {
+  padding: 60px 0 50px;
+}
+
+#plans .planBox .plan-2 .iconBox {
+  margin-top: 25px;
+}
+
+#plans .planBox .plan-2 .second-plan-heading {
+  margin-top: 30px;
+}
+
+#plans .planBox .plan-2 .plan-footer {
+  margin-top: 80px;
+}
+
+#plans .planBox .plan-3 {
+  padding: 50px 0 45px;
+}
+
+#plans .planBox .plan-3 .iconBox {
+  margin-top: 40px;
+}
+
+#plans .planBox .plan-3 .second-plan-heading {
+  margin-top: 30px;
+}
+
+#plans .planBox .plan-3 .plan-footer {
+  margin-top: 35px;
+}
+
+#global-network {
+  background-color: #fefefe;
+  padding-top: 50px;
+}
+
+#global-network .g-network-heading {
+  text-align: center;
+  margin-bottom: 155px;
+}
+
+#global-network .g-network-heading h3 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #0b132a;
+}
+
+#global-network .g-network-heading p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+#global-network .g-network-heading p span {
+  font-weight: 600;
+}
+
+#global-network .g-network-img img {
+  width: 100%;
+}
+
+.socialMediaBox {
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMediaBox .social-icon-box {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMediaBox .netflix a {
+  position: relative;
+  opacity: 1;
+}
+
+.socialMediaBox .netflix a::before {
+  content: url("../assets/icons/netflix-1.svg");
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.socialMediaBox .netflix a:hover::before {
+  opacity: 1;
+}
+
+.socialMediaBox .reddit a {
+  position: relative;
+  opacity: 1;
+}
+
+.socialMediaBox .reddit a::before {
+  content: url("../assets/icons/reddit-1.svg");
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.socialMediaBox .reddit a:hover::before {
+  opacity: 1;
+}
+
+.socialMediaBox .amazon {
+  margin-left: -25px;
+}
+
+.socialMediaBox .amazon a {
+  position: relative;
+  opacity: 1;
+}
+
+.socialMediaBox .amazon a::before {
+  content: url("../assets/icons/amazon-1.svg");
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.socialMediaBox .amazon a:hover::before {
+  opacity: 1;
+}
+
+.socialMediaBox .discord a {
+  position: relative;
+  opacity: 1;
+}
+
+.socialMediaBox .discord a::before {
+  content: url("../assets/icons/discord-1.svg");
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.socialMediaBox .discord a:hover::before {
+  opacity: 1;
+}
+
+.commentBox {
+  margin-top: 120px;
+}
+
+.commentBox .comment-heading {
+  text-align: center;
+}
+
+.commentBox .comment-heading h3 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #0b132a;
+}
+
+.commentBox .comment-heading p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+.commentBox .comment-content {
+  margin-top: 60px;
+}
+
+.commentBox .comment-content .my-card {
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  padding: 30px;
+  height: 255px;
+  transition: all 0.5s;
+}
+
+.commentBox .comment-content .my-card:hover {
+  border-color: #7f67ce;
+}
+
+.commentBox .comment-content .my-card .first-card-section {
+  display: flex;
+}
+
+.commentBox .comment-content .my-card .first-card-section .user {
+  padding-left: 20px;
+}
+
+.commentBox .comment-content .my-card .first-card-section .user h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #0b132a;
+}
+
+.commentBox .comment-content .my-card .first-card-section .user h5 span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #4f5665;
+}
+
+.commentBox .comment-content .my-card .first-card-section .raiting {
+  padding-left: 50px;
+}
+
+.commentBox .comment-content .my-card .first-card-section .raiting span {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #0b132a;
+}
+
+.commentBox .comment-content .my-card .first-card-section .raiting span::before {
+  content: url("../assets/icons/star.svg");
+  position: absolute;
+  top: -20%;
+  left: 140%;
+}
+
+.commentBox .comment-content .my-card .content {
+  margin-top: 15px;
+}
+
+.commentBox .comment-content .my-card .content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #0b132a;
+  margin-bottom: 0;
+}
+
+.subscribeBox {
+  background-color: #fff;
+  margin-top: 185px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  border-radius: 10px;
+  padding: 60px 70px;
+  position: relative;
+  top: 120px;
+}
+
+.subscribeBox .contentBox h3 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #0b132a;
+}
+
+.subscribeBox .contentBox p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+  margin-bottom: 0;
+}
+
+.subscribeBox .button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.subscribeBox .button .buttonBox a {
+  padding: 15px 65px;
+  background-color: #7f67ce;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 180px 150px 100px;
+}
+
+.footer-content {
+  margin-top: 60px;
+}
+
+.contentBox {
+  margin-top: 20px;
+}
+
+.contentBox p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+.contentBox p span {
+  font-weight: 600;
+}
+
+.f-social-icon {
+  margin-top: 20px;
+  display: flex;
+}
+
+.f-social-icon .icon-link {
+  padding-right: 20px;
+}
+
+.copyright {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+.copyright span {
+  font-weight: 600;
+}
+
+.listBox ul {
+  list-style-type: none;
+}
+
+.listBox ul p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #0b132a;
+}
+
+.listBox ul a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+.listBox ul a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  ul {
+    margin-left: -20px;
+  }
+  ul .nav-item:not(:last-child) {
+    padding-right: 5px;
+  }
+  #intro h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  #intro .btnBox {
+    margin-top: 30px;
+  }
+  .featureBox .imgBox {
+    height: 100%;
+  }
+  .featureBox .imgBox img {
+    height: 100%;
+  }
+  .featureBox .main-content p br {
+    display: none;
+  }
+  .commentBox .comment-content .my-card {
+    height: 300px;
+  }
+  .commentBox .comment-content .my-card .first-card-section .user h5 span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav .collapse {
+    margin: 0;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  nav ul .nav-item:not(:last-child) {
+    padding-right: 0;
+  }
+  nav .buttons a:first-child {
+    display: block;
+    text-align: start;
+  }
+  nav .buttons a {
+    margin-top: 10px;
+    padding: 0;
+  }
+  nav .buttons .btn:last-child {
+    margin-left: 0;
+  }
+  #intro .introImgBox {
+    height: 100%;
+    display: flex;
+  }
+  .featureBox .contentBox .main-content h3 {
+    font-size: 25px;
+  }
+  #plans .planBox .plan {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .raiting {
+    display: none;
+  }
+  .commentBox .comment-content .my-card {
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #intro .introImgBox {
+    display: none;
+  }
+  .bannerBox .locations {
+    margin-left: 25px;
+  }
+  .bannerBox .servers {
+    margin-left: 10px;
+  }
+  .featureBox .imgBox {
+    display: none;
+  }
+  #plans .planBox .plan {
+    margin-top: 20px;
+  }
+  .commentBox .comment-content .my-card {
+    margin-top: 20px;
+  }
+  .raiting {
+    display: block;
+  }
+  .subscribeBox .contentBox {
+    text-align: center;
+  }
+  footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

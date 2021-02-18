@@ -1,0 +1,7 @@
+@function btn($bg-color) {
+  @if ($bg-color > 70) {
+    @return #fff;
+  } @else if($bg-color == transparent) {
+    @return $primary-color;
+  }
+}
