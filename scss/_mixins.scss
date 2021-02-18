@@ -5,6 +5,13 @@
   color: $color;
 }
 
+@mixin pragraph() {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $paragraph-color;
+}
+
 @mixin btn($padding, $bg-color, $border, $radius) {
   padding: $padding;
   background-color: $bg-color;

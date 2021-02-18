@@ -8,7 +8,7 @@
   }
   p {
     margin-top: 20px;
-    @include text(16px, 400, 30px, $paragraph-color);
+    @include pragraph();
     span {
       font-weight: 600;
     }
@@ -69,7 +69,7 @@
         @include text(35px, 500, 50px, $heading-color);
       }
       p {
-        @include text(16px, 400, 30px, $paragraph-color);
+        @include pragraph();
       }
     }
     .second-content {
@@ -100,7 +100,7 @@
         @include text(35px, 500, 50px, $heading-color);
       }
       p {
-        @include text(16px, 400, 30px, $paragraph-color);
+        @include pragraph();
       }
     }
     .plan {
@@ -198,7 +198,7 @@
       @include text(35px, 500, 50px, $heading-color);
     }
     p {
-      @include text(16px, 400, 30px, $paragraph-color);
+      @include pragraph();
       span {
         font-weight: 600;
       }
@@ -301,7 +301,7 @@
       @include text(35px, 500, 50px, $heading-color);
     }
     p {
-      @include text(16px, 400, 30px, $paragraph-color);
+      @include pragraph();
     }
   }
   .comment-content {
@@ -364,7 +364,7 @@
       @include text(35px, 500, 45px, $heading-color);
     }
     p {
-      @include text(16px, 400, 30px, $paragraph-color);
+      @include pragraph();
       margin-bottom: 0;
     }
   }
