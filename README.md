@@ -1,4 +1,4 @@
-# LaslesVPN <img src="./assets/icons/Logo.svg">
+# LaslesVPN <img src="./assets/icons/Logo.svg" style="fill:#fff">
 
 ## WebSite's Link: <br> https://abdulaziz930.github.io/LaslesVPN/
 
